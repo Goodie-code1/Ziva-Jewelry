@@ -1,14 +1,46 @@
-body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #fff; color: #333; }
+/* General reset for better spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-header { display: flex; justify-content: space-between; padding: 30px 10%; background: #0a192f; color: #fff; }
-.logo { font-size: 24px; font-weight: bold; letter-spacing: 2px; }
-nav a { color: #fff; text-decoration: none; margin-left: 30px; font-size: 14px; }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #0a192f;
+}
 
-.hero { text-align: center; padding: 100px 10%; background: #fff; color: #0a192f; }
-.cta { display: inline-block; margin-top: 20px; padding: 12px 30px; background: #0a192f; color: #fff; text-decoration: none; }
+/* Header - Centered layout */
+header {
+    display: flex;
+    justify-content: center; /* Centers the navigation links */
+    gap: 20px;               /* Adds space between links */
+    padding: 20px 10px;
+    background: #0a192f;
+    color: #fff;
+}
 
-.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; padding: 60px 10%; }
-.card { padding: 30px; text-align: left; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
-.card:hover { transform: translateY(-5px); }
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-footer { text-align: center; padding: 40px; color: #888; font-size: 14px; border-top: 1px solid #eee; margin-top: 50px; }
+/* Hero Section - Reduced padding to prevent "empty" look */
+.hero {
+    text-align: center;
+    padding: 50px 10%; /* Reduced from 100px to 50px */
+    background: #fff;
+    color: #0a192f;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #0a192f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
